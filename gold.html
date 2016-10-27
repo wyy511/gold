@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html{
+      font-family: sans-serif;
+      webkit-text-size-adjust:100%;
+    }
+    body{
+      color: #333;
+      font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+      text-rendering: optimizeLegibility;
+      background-color: #fff;
+    }
+    div{
+      display: block;
+    }
+    *, :after, :before{
+      box-sizing: border-box;
+      outline: none;
+    }
+    ul,menu,dir{
+      display: block;
+      list-style-type: disc;
+      -webkit-margin-before:1em;
+      -webkit-margin-after:1em;
+      -webkit-margin-start:0px;
+      -webkit-margin-end:0px;
+      -webkit-padding-start:40px;
+    }
+
+    .box-list{
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      width: 100%;
+    }
+    li{
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+    .box-list>li{
+      display: inline-block;
+      text-align: center;
+      width: 25%;
+      margin-bottom: 1em;
+      padding: 0 .5em;
+    }
+    .box-content{
+      overflow: hidden;
+      border: 1px solid #f1f1f1;
+      -wevkit-transition:border color .3s;
+      transition: border-color .3s;
+    }
+    .box-content .box-clickable{
+      display: block;
+      cursor: pointer;
+      padding:1.5em .5em;
+    }
+    img{
+      border: 0;
+    }
+    .box-content .box-icon{
+      display: inline-block;
+      height: 2em;
+    }
+    .box-content .box-title{
+      margin:.5em 0.3em;
+      line-height: 1.5em;
+    }
+    .box-content .box-meta{
+      color: #909090;
+      font-size: .8em;
+    }
+    .box-content .box-meta .action{
+      display: inline-block;
+    }
+    .subscribe-button{
+      position: relative;
+      display: inline-block;
+      width: 3.5em;
+      height: 1.5em;
+      border: 1px solid rgba(55, 199, 0, 0.3);
+      cursor: pointer;
+      color: #37c700;
+      border-radius: 2px;
+      text-align: center;
+      -webkit-transition:width .3s,border-color .3s,background-color .3s;
+      transition: width .3s,border-color .3s,background-color .3s;
+    }
+    .box-content .subscribe-button{
+      margin-bottom: 1em;
+    }
+    .subscribe-button:after{
+      content:'\5173\6CE8';
+      display: inline-block;
+    }
+    @media (max-width:960px){
+      .box-list>li{
+        width: 50%;
+      }
+      .container{
+        width: 100%;
+      }
+      }
+    .box-content .box-meta .action+.action{
+      margin-left: 1em;
+    }
+  </style>
+</head>
+<body>
+  <ul class="box-list">
+    <li>
+      <div class="box-content">
+        <div class="box-clickable">
+        <img class="box-icon" src="http://ac-mhke0kuv.clouddn.com/bac28828a49181c34110.png"/>
+        <div class="box-title">前端</div>
+        <div class="box-meta">
+          <span class="action">
+            80231
+            关注
+          </span>
+          <span class="action">
+            2614
+            文章
+          </span>
+        </div>
+      </div>
+      <div class="subscribe-button">
+      </div>
+      </div>
+    </li><li>
+      <div class="box-content">
+        <div class="box-clickable">
+        <img class="box-icon" src="http://ac-mhke0kuv.clouddn.com/0d614af263aa63aa6a77.png"/>
+        <div class="box-title">Gitub</div>
+        <div class="box-meta">
+          <span class="action">
+            73008
+            关注
+          </span>
+          <span class="action">
+            628
+            文章
+          </span>
+        </div>
+      </div>
+      <div class="subscribe-button">
+      </div>
+      </div>
+    </li><li>
+      <div class="box-content">
+        <div class="box-clickable">
+        <img class="box-icon" src="http://ac-mhke0kuv.clouddn.com/7bab0e1e66ea386e6f94.png"/>
+        <div class="box-title">Android</div>
+        <div class="box-meta">
+          <span class="action">
+            69355
+            关注
+          </span>
+          <span class="action">
+            4250
+            文章
+          </span>
+        </div>
+      </div>
+      <div class="subscribe-button">
+      </div>
+      </div>
+    </li><li>
+      <div class="box-content">
+        <div class="box-clickable">
+        <img class="box-icon" src="http://ac-mhke0kuv.clouddn.com/f2e3a6fceb1a4f1ce6b6.png"/>
+        <div class="box-title">设计</div>
+        <div class="box-meta">
+          <span class="action">
+            62515
+            关注
+          </span>
+          <span class="action">
+            1241
+            文章
+          </span>
+        </div>
+      </div>
+      <div class="subscribe-button">
+      </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
